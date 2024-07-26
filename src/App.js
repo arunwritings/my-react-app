@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import MapFunction from './components/MapFunction';
+import FilterFunction from './components/FilterFunction';
 
 const App = () => {
 const[data,setData] = useState({
@@ -25,6 +27,8 @@ const submitHandler = e=>{
           <input type='submit' name='submit'/>
         </form>
       </center>
+      <MapFunction/><br/>
+      <FilterFunction/>
     </div>
   )
 }
